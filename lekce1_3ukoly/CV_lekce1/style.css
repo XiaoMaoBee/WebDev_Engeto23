@@ -1,0 +1,35 @@
+html {
+  background-color: #fdf7e4;
+  padding: 20px;
+  width: 800px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #765827;
+}
+
+.details {
+  position: absolute;
+  margin-left: 400px;
+}
+
+.credo {
+  position: absolute;
+}
+
+.dark {
+  background-color: #faeed1;
+}
+
+th {
+  text-align: left;
+}
+
+.ped {
+  padding: 20px;
+}
