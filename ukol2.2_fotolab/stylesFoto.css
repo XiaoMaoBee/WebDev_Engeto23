@@ -1,0 +1,170 @@
+:root {
+  --font-blue: rgb(43, 42, 76);
+  --badge-red: rgb(179, 19, 18);
+  --decor-orange: rgb(234, 144, 108, 0.82);
+  --background-beige: rgb(238, 226, 222);
+  --highlite-red: rgb(255, 0, 0, 0.82);
+  --font-white: white;
+  --badge-yellow: yellow;
+}
+
+.functional,
+.accessoires-badge,
+.last-item-badge,
+.finance-details,
+.contacts {
+  border-radius: 0px 7px;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.product-card {
+  width: 450px;
+  padding: 20px;
+  border: 1px solid silver;
+  position: relative;
+  color: var(--font-blue);
+}
+
+.img-container {
+  text-align: center;
+  background-color: var(--background-beige);
+}
+
+img {
+  width: 350px;
+}
+
+.discount-badge-container {
+  background-color: var(--badge-yellow);
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  line-height: 90px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.discount-badge {
+}
+
+.functional-badge-container {
+  position: absolute;
+  top: 350px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.functional {
+  padding: 8px 16px;
+  background-color: var(--highlite-red);
+}
+
+.accessoires-badge-container {
+  position: absolute;
+  top: 400px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.accessoires-badge {
+  background-color: var(--decor-orange);
+  padding: 8px 16px;
+}
+
+.last-item-container {
+  position: absolute;
+  top: 450px;
+}
+
+.last-item-badge {
+  padding: 8px 16px;
+  background-color: var(--highlite-red);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.paragraph-container {
+}
+
+.finance-details {
+  background-color: var(--decor-orange);
+  position: relative;
+  margin-bottom: 8px;
+  border-radius: 0px 5px;
+}
+
+.product-price-badge {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 12px 45px;
+  display: inline-block;
+}
+
+.price-number {
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  padding: 12px 12px 45px;
+  line-height: 45px;
+  display: inline-block;
+}
+
+.cash-only-payment {
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 12px 12px 45px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.contacts {
+  background-color: var(--background-beige);
+  padding: 12px;
+}
+
+.contact-us-badge {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.address-badge {
+  font-weight: bold;
+}
+
+.address {
+  font-weight: 400;
+}
+
+.phone-details {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin-top: 8px;
+}
+
+.phone-badge {
+  font-weight: bold;
+}
+
+.email-details {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.email-badge {
+  font-weight: bold;
+}
+
+.email {
+}
