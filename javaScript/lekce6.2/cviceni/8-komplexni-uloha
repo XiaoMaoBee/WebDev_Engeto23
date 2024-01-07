@@ -1,0 +1,5 @@
+const barva = prompt("Zadej anglický název barvy: ");
+
+const body = document.querySelector("body");
+
+body.style.backgroundColor = barva;

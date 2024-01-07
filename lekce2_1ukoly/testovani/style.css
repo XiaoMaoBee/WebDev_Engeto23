@@ -1,0 +1,13 @@
+:root {
+  --nadpis_green: rgb(115, 144, 114);
+}
+
+h1 {
+  color: var(--nadpis_green);
+}
+
+p {
+  background-color: yellow;
+  color: var(--nadpis_green);
+  font-size: 120%;
+}

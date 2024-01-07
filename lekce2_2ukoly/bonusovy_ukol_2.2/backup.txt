@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="prod-karta">
+      <div class="bestseller">
+        <p>Bestseller</p>
+      </div>
+      <p class="product-roku">Product roku 2023</p>
+      <div class="sleva">
+        <p class="par-sleva">-25%</p>
+      </div>
+      <div class="produkt-obrazek">
+        <img src="./HPPAV.avif" alt="hp pc box" />
+      </div>
+
+      <div class="margin-text">
+        <h1>HP Pavilion 15-dk0002nc Stolní Počítač</h1>
+
+        <p>
+          HP Pavilion 15-dk0002nc je výkonný stolní počítač, který splní vaše
+          všechny počítačové potřeby. Tento model je vybaven nejnovějším
+          procesorem, velkou pamětí RAM a rychlou grafickou kartou, což ho činí
+          ideálním pro náročné úkoly, hraní her i produktivní práci.<span
+            class="vice-info"
+            >Více info</span
+          >
+        </p>
+
+        <div class="cena-doKosiku">
+          <p>35 990,-</p>
+          <p>Ušetříte 1000,-</p>
+          <button button-doKosiku>Do kokšíku</button>
+        </div>
+
+        <div class="postovni-box">
+          <p>Poštovní box 1500 metrů od tvé lokace</p>
+          <p>info</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

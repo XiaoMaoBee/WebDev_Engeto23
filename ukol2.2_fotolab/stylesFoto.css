@@ -21,7 +21,10 @@ body {
 }
 
 .product-card {
-  width: 450px;
+  /* width: 450px; */
+  width: calc(100% - 42px);
+  /* max-width: 450px; */
+  margin: auto;
   padding: 20px;
   border: 1px solid silver;
   position: relative;
@@ -34,7 +37,9 @@ body {
 }
 
 img {
-  width: 350px;
+  /* width: 350px; */
+  width: 100%;
+  object-fit: cover;
 }
 
 .discount-badge-container {

@@ -1,0 +1,191 @@
+:root {
+  --lite-yellow: rgb(250, 239, 155);
+  --dark-yellow: rgb(246, 215, 118);
+  --lite-blue: rgb(109, 164, 170);
+  --dark-blue: rgb(100, 125, 135);
+  --orange: rgb(246, 177, 122);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px 20px;
+  background-color: rgb(109, 164, 170, 0.2);
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-title {
+  background-color: var(--dark-blue);
+  border-radius: 5px 5px 0px 0px;
+}
+
+h1 {
+  padding: 20px 0px;
+  text-align: center;
+  color: var(--orange);
+  margin: 0;
+}
+
+nav {
+  background-color: var(--lite-blue);
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+}
+
+.icon-menu {
+  padding: 15px 20px;
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .icon-menu {
+    display: block;
+    position: relative;
+  }
+  nav a {
+    display: none;
+  }
+  .introduction-container {
+    background-image: url(./images/nature.jpg);
+  }
+}
+
+.introduction-container {
+  background-image: url(./images/portret3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 5px;
+  height: 50vh;
+  margin-bottom: 15px;
+}
+
+.introduction-content {
+  background-color: rgb(109, 164, 170, 0.7);
+  border-radius: 0px 5px 5px;
+  width: 50%;
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+
+.introduction-title {
+  padding-left: 20px;
+}
+
+.introduction-text {
+  padding-left: 20px;
+}
+
+.bicycle-info {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.bicycle-img-container {
+  width: 50%;
+}
+
+.bicycle-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.bicycle-intro-container {
+  background-color: rgb(109, 164, 170, 0.7);
+  width: 48%;
+  height: 98.4%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.bicycle-intro-container p {
+  margin: 0px;
+}
+
+@media (max-width: 678px) {
+  .icon-menu {
+    display: inline-block;
+  }
+  nav a {
+    display: none;
+  }
+  .introduction-container {
+    background-image: url(./images/nature.jpg);
+    background-size: cover;
+  }
+  .introduction-content {
+    width: 90%;
+  }
+  .bicycle-img-container {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+  }
+
+  .bicycle-img {
+    object-fit: contain;
+  }
+
+  .bicycle-intro-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .bicycle-intro-container {
+    position: static;
+    width: 100%;
+  }
+
+  .bicycle-info {
+    height: 700px;
+  }
+
+  .bicycle-img-container {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+.contact-me-container {
+  background-color: var(--lite-blue);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.contact-me {
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  background-color: var(--dark-blue);
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}

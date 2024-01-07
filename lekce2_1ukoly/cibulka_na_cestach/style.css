@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  color: rgb(58, 77, 57);
+}
+.velka-pismena {
+  text-transform: uppercase;
+}
+
+.sirka-obrazku {
+  width: 25%;
+}
+.podtrzeny-text {
+  text-decoration: underline;
+}
+a {
+  color: rgb(200, 00, 00, 0.5);
+}
+.popis-obrazku-kurziva {
+  font-style: italic;
+  font-size: 14px;
+}
+.zdroj-textu {
+  font-style: italic;
+}
+.tucny-text {
+  font-weight: bold;
+}
