@@ -3,6 +3,10 @@
   --pastel-pink: rgb(255, 199, 199);
   --base-yellow: yellow;
   --base-red: red;
+  --base-green: green;
+  --base-white: white;
+  --background-shadow: rgba(0, 0, 0, 0.1);
+  --info-text-shadow-color: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -39,18 +43,18 @@ body {
 }
 
 .hero-big-text {
-  color: white;
+  color: var(--base-white);
   font-size: 40px;
   padding-bottom: 20px;
 }
 
 .hero-small-text {
-  color: white;
+  color: var(--base-white);
 }
 
 .button-hero-vice {
-  background-color: red;
-  color: white;
+  background-color: var(--base-red);
+  color: var(--base-white);
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
@@ -68,7 +72,7 @@ body {
   top: 100px;
   right: 50px;
   border-radius: 50px;
-  background-color: red;
+  background-color: var(--base-red);
   text-align: center;
   padding: 35px 0px;
 }
@@ -82,7 +86,7 @@ body {
 .hero-discount-badge {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: var(--base-white);
 }
 
 /* Promo cards */
@@ -118,16 +122,16 @@ body {
 }
 
 .hoover-text {
-  color: white;
+  color: var(--base-white);
   margin-bottom: 12px;
 }
 
 .button-hoover-vice {
-  color: white;
+  color: var(--base-white);
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  background-color: red;
+  background-color: var(--base-red);
   border-radius: 5px;
 }
 
@@ -153,17 +157,15 @@ body {
 }
 
 .mobile-text {
-  color: white;
+  color: var(--base-white);
   margin-bottom: 20px;
 }
 
-
-
 .button-mobil-vice {
-  color: white;
+  color: var(--base-white);
   font-weight: bold;
   padding: 8px 16px;
-  background-color: red;
+  background-color: var(--base-red);
   border-radius: 5px;
   text-decoration: none;
 }
@@ -190,15 +192,15 @@ body {
 }
 
 .clothes-text {
-  color: white;
+  color: var(--base-white);
   margin-bottom: 20px;
 }
 
 .button-clothes-vice {
-  color: white;
+  color: var(--base-white);
   text-decoration: none;
   font-weight: bold;
-  background-color: red;
+  background-color: var(--base-red);
   padding: 8px 16px;
   border-radius: 5px;
 }
@@ -218,7 +220,7 @@ body {
 .card-product-container {
   width: 400px;
   position: relative;
-  background: white;
+  background: var(--base-white);
   padding: 15px;
 }
 
@@ -235,7 +237,7 @@ body {
 }
 
 .product-bestseller-badge {
-  background-color: yellow;
+  background-color: var(--base-yellow);
   border-radius: 0px 5px 5px 0px;
   padding: 8px 16px;
   font-weight: bold;
@@ -267,7 +269,7 @@ body {
 }
 
 .badge-product-discount {
-  color: white;
+  color: var(--base-white);
   font-weight: bold;
   font-size: 30px;
 }
@@ -287,14 +289,14 @@ body {
 }
 
 .product-vice-info-link {
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--info-text-shadow-color);
   position: absolute;
   right: 30px;
 }
 
 .product-stock-info-container {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--background-shadow);
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -308,14 +310,14 @@ body {
   border-radius: 5px;
   color: var(--base-red);
   display: inline-block;
-  background-color: white;
+  background-color: var(--base-white);
 }
 
 .product-num-products-on-stock {
   font-size: 20px;
   font-weight: bold;
   text-decoration: underline;
-  color: green;
+  color: var(--base-green);
   position: absolute;
   top: 20px;
   right: 30px;
@@ -358,15 +360,15 @@ body {
 
 .product-price-before {
   text-decoration: line-through;
-  color: red;
+  color: var(--base-red);
   font-weight: bold;
 }
 
 .add-to-cart-badge-container {
-  background-color: yellow;
+  background-color: var(--base-yellow);
   display: inline-block;
   position: absolute;
-  border: 1px solid red;
+  border: 1px solid var(--base-red);
   border-radius: 10px;
   right: 30px;
   bottom: 10px;
