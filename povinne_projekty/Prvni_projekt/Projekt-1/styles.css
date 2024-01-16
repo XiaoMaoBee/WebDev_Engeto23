@@ -1,36 +1,109 @@
 
+:root {
+    --nav-background-color: #33292a;
+    --nav-color: #fff;
+    --background-1: #33292a;
+    --background-2: #644b4f;
+    --background-3: #333333;
+    --background-4: #f2f2f2;
+    --link-color: #efa69d;
+    --link-hoover: #e9877b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    max-width: 80%;
+    margin: 15px auto;
+  }
+  
+  .navigation-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--nav-background-color);
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .navigation-item {
+    color: var(--nav-color);
+    padding: 25px 0px;
+    font-size: 20px;
+  }
+  
+  .icon-container {
+    display: none;
+    padding: 25px;
+  }
+  
+  .nav-icon {
+    color: var(--nav-color);
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navigation-container {
+      justify-content: end;
+    }
+    .icon-container {
+      display: flex;
+      align-items: center;
+    }
+    .navigation-item {
+      display: none;
+    }
+  }
+
+
+
+
+  
 
 
 
 
 
 
-Použité barvy:
-Navigace:
-background-color: #33292a
-color: #fff
 
-Pozadí:
-#33292a
-#644b4f
-#333333
-#f2f2f2
 
-Odkaz: 
-#efa69d
 
-Odkaz hover: 
-#e9877b
 
-Zakulacení rohů:
-border-radius: 5px;
+  
+  /* Použité barvy:
+  Navigace:
+  background-color: #33292a
+  color: #fff
+  
+  Pozadí:
+  #33292a
+  #644b4f
+  #333333
+  #f2f2f2
+  
+  Odkaz: 
+  #efa69d
+  
+  Odkaz hover: 
+  #e9877b
+  
+  Zakulacení rohů:
+  border-radius: 5px;
+  
+  Použitá rodina písma:
+  Roboto
+  
+  Breakpoint mobil vs desktop:
+  768px
+  
+  Odkaz na figmu
+  https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=0%3A1&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=4%3A195&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=6%3A280&t=5bm9TcpqNQQAhNxK-1
+   */
+  
 
-Použitá rodina písma:
-Roboto
 
-Breakpoint mobil vs desktop:
-768px
 
-Odkaz na figmu
-https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=0%3A1&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=4%3A195&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=6%3A280&t=5bm9TcpqNQQAhNxK-1
 
