@@ -1,0 +1,96 @@
+      <!-- WHERE DO YOU WANT TO GO - ORIGINAL -->
+
+      <!-- <div class="where-you-go-section-container">
+        <div class="narrow-section-wrapper">
+          <h2 class="title-where-you-go">Where do you want to go?</h2>
+          <div class="text-wrapper">
+            <p class="where-you-go-text">
+              You’ll find 21 detailed adventure guides, over a hundred practical
+              travel tips, book reviews on anything outdoors related, packing
+              lists on a range of outdoor activities including kayaking,
+              backpacking and camping as well as honest hotel and B&B reviews.
+            </p>
+            <p class="contact-us-text-line">Contact us and we will help you!</p>
+            </p>
+            <div class="button-wrapper">
+            <a class="contact-us-button" href="#">CONTACT US</a>
+          </div>
+        </div>
+        </div>
+      </div>  -->
+
+
+      css:
+
+      /* .where-you-go-section-container {
+  background-color: var(--background-2);
+  color: var(--nav-color);
+}
+
+.narrow-section-wrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-where-you-go {
+  width: 22%;
+  display: inline-block;
+}
+
+.text-wrapper {
+  font-size: 14px;
+  display: inline-block;
+  width: 65%;
+}
+
+.where-you-go-text {
+}
+
+.contact-us-text-line {
+  margin: 15px 0 40px 0;
+}
+
+.contact-us-button {
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: var(--background-4);
+  border-radius: 5px;
+} */
+
+/* @media (max-width: 768px) {
+  .narrow-section-wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+
+  .title-where-you-go,
+  .text-wraper,
+  .contact-us-text-line {
+    /* width: 100%; */
+/* text-align: left;
+  } */
+
+/* .button-wrapper {
+    margin: auto;
+  }
+
+  .contact-us-button {
+    text-decoration: none;
+  }
+
+  .where-you-go-text,
+  .contact-us-text-line {
+    width: 100%;
+  }
+
+  .contact-us-text-line,
+  .title-where-you-go {
+    margin-bottom: 50px;
+  }
+} */
+/* */

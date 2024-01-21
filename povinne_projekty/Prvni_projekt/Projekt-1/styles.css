@@ -1,79 +1,473 @@
-
 :root {
-    --nav-background-color: #33292a;
-    --nav-color: #fff;
-    --background-1: #33292a;
-    --background-2: #644b4f;
-    --background-3: #333333;
-    --background-4: #f2f2f2;
-    --link-color: #efa69d;
-    --link-hoover: #e9877b;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    max-width: 80%;
-    margin: 15px auto;
-  }
-  
+  --nav-background-color: #33292a;
+  --nav-color: #fff;
+  --background-1: #33292a;
+  --background-2: #644b4f;
+  --background-3: #333333;
+  --background-4: #f2f2f2;
+  --link-color: #efa69d;
+  --link-hoover: #e9877b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+}
+
+/* NAVIGATION BAR */
+
+.project-container {
+  background-color: var(--nav-background-color);
+}
+
+.section-container {
+  background-color: var(--nav-background-color);
+}
+
+.navigation-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  color: var(--nav-color);
+  padding: 25px 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.icon-container {
+  display: none;
+  padding: 25px;
+}
+
+.nav-icon {
+  color: var(--nav-color);
+}
+
+@media screen and (max-width: 768px) {
   .navigation-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--nav-background-color);
-    border-radius: 5px 5px 0 0;
+    justify-content: end;
   }
-  
-  .navigation-item {
-    color: var(--nav-color);
-    padding: 25px 0px;
-    font-size: 20px;
-  }
-  
   .icon-container {
+    display: block;
+    padding: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+  }
+  .navigation-item {
     display: none;
-    padding: 25px;
   }
-  
-  .nav-icon {
-    color: var(--nav-color);
-    font-size: 20px;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section-container {
+  background-image: url(./images/Welcome-section-tent.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-wrapper {
+  height: 80vh;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title h1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+  text-align: right;
+  color: var(--nav-color);
+  font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+  .title-wrapper {
+    width: 85%;
+    height: 60vh;
   }
-  
-  @media screen and (max-width: 768px) {
-    .navigation-container {
-      justify-content: end;
-    }
-    .icon-container {
-      display: flex;
-      align-items: center;
-    }
-    .navigation-item {
-      display: none;
-    }
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ABOUT US */
+
+.about-us-section-container {
+  background-color: var(--background-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-card-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 3rem 0;
+}
+
+.card {
+  width: calc(100% / 2);
+  flex-grow: 1;
+}
+
+.about-us-title {
+  margin-bottom: 18px;
+}
+
+.about-us-paragraph {
+  font-size: 14px;
+}
+
+.img-about-us {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1020px) {
+  .about-us-card-container {
+    flex-direction: column;
   }
 
+  .text-card-wrapper {
+    width: 100%;
+  }
 
+  .about-us-img-wrapper {
+    width: 100%;
+  }
+}
 
+@media (max-width: 768px) {
+  .about-us-card-container {
+    width: 85%;
+  }
+}
 
-  
+/* WHAT WE DO */
 
+.what-we-do-section-container {
+  background-color: var(--background-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.title-what-we-do {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
 
+.what-we-do-text-wrapper {
+  width: 70%;
+  text-align: center;
+  color: var(--nav-color);
+  font-size: 14px;
+  margin-bottom: 100px;
+}
 
+.icon-menu-container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--nav-color);
+  gap: 3px;
+}
 
+.icon-wrapper {
+  text-align: center;
+  width: calc(100% / 4 - 3px);
+  font-size: 15px;
+  margin-bottom: 90px;
+}
 
+.icon-wwd {
+  width: 60%;
+  margin-bottom: 20px;
+  /* object-fit: cover; */
+}
 
+@media (max-width: 768px) {
+  .icon-menu-container {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+  .icon-wwd {
+    width: 100%;
+  }
 
+  .what-we-do-text-wrapper {
+    width: 85%;
+  }
+}
 
+/* OUR TRIPS GALLERY */
 
-  
-  /* Použité barvy:
+.trips-gallery-section {
+  background-color: whitesmoke;
+  padding: 80px 0;
+}
+
+.trip-narrow-section-container {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: calc(100% / 3 - 4px / 2);
+  /* height: 180px; */
+}
+
+.img-gallery {
+  width: 100%;
+  height: 100%;
+  /* flex-shrink: 1; */
+}
+
+@media (max-width: 768px) {
+  .img-gallery {
+    width: 100%;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    width: 85%;
+  }
+}
+
+/* WHERE DO YOU WANT TO GO */
+
+.container {
+  /*  */
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-2);
+  padding: 60px 20px;
+}
+.content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.header {
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  color: var(--nav-color);
+}
+.header h2 {
+  font-size: px;
+}
+.second-block {
+  flex: 2;
+  font-size: 14px;
+  color: var(--nav-color);
+}
+.text {
+  text-align: justify;
+}
+.top {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.button {
+  background-color: var(--background-4);
+  width: fit-content;
+  border-radius: 5px;
+  margin: auto;
+}
+.button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+h2 {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .header {
+    text-align: left;
+  }
+  .top {
+    text-align: left;
+  }
+
+  .button {
+    margin: 0px;
+  }
+}
+
+/* REVIEWS */
+
+.reviews-section-container {
+  background-color: var(--background-4);
+  padding: 50px 0px;
+  font-size: 14px;
+}
+.trip-narrow-section-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: var(--background-4);
+}
+.introduction {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.reviews-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.people-review-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bertie-review-card-wrapper,
+.frank-kinney-card-wrapper {
+  width: calc(100% / 2 - 20px);
+  height: 30rem;
+  margin: 20px auto;
+  position: relative;
+}
+
+.img-bertie-wrapper,
+.img-frank-wrapper {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.bertie-img,
+.frank-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bertie-review-text,
+.frank-review-text {
+  margin-bottom: 20px;
+}
+
+.name-text-bertie,
+.name-text-frank {
+  font-weight: bold;
+}
+
+@media (max-width: 1020px) {
+  .people-review-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bertie-review-card-wrapper,
+  .frank-kinney-card-wrapper {
+    width: 100%;
+    height: 23rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bertie-review-card-wrapper,
+  .frank-kinney-card-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .review-narrow-section-container {
+    width: 85%;
+  }
+  .reviews-intro-text {
+    text-align: left;
+  }
+}
+
+/* GALLERY */
+
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-section img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .gallery-section img {
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: var(--background-3);
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.contact {
+  color: var(--link-color);
+}
+
+a.contact:hover {
+  color: var(--link-hoover);
+}
+
+.copyright {
+  color: var(--nav-color);
+  margin-top: 12px;
+}
+
+/* Použité barvy:
   Navigace:
   background-color: #33292a
   color: #fff
@@ -102,8 +496,3 @@
   Odkaz na figmu
   https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=0%3A1&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=4%3A195&t=5bm9TcpqNQQAhNxK-1 https://www.figma.com/file/I3CPHrJyWzUj8rrU08zcIp/Engeto-Projekt-1?node-id=6%3A280&t=5bm9TcpqNQQAhNxK-1
    */
-  
-
-
-
-
